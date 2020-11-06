@@ -39,23 +39,31 @@ Provides a method to keep a CursorTrack or Cursor Bank assigned to a specific ch
 ```
 
 ## ClipData
-Store Data into clip objects. Different styles of clip note objects exist for data. There is Note & Velocity datatypes. When selecting a clip it updates the parent class with its data set.
+Store Data into clip objects. Different styles of clip note objects exist for data. There is Note & Velocity datatypes. When playing a clip it updates the parent class with its data set.
 
 ## ClipFileData
-Similar functionality as Clip Data. But no longer uses note data as its storage. Data is stored to a file and then able to be recalled via clip name. The file is plain text and can be edited later if deemed useful.
+Similar functionality as Clip Data. But no longer uses note data as its storage. Data is stored to a file and then able to be recalled via playig the clip. It uses the clip name to register and recall the data.  The file is plain text and can be edited later if deemed useful.
 
 ## Leds
 Basic class with example to set led values without having to keep track of data manually if an LED has been set up or not. This is useful for tracking LED states and updating them for every flush. This only updates the values that have been changed via Lambda Supplier.
 
 # Additional Utilities
 ## Log
-A simple logger so you don't have to pass in host to all your classes. Instantiate the class once with the host and the use Log.println("") anywhere in your script.
+A simple logger so you don't have to pass in host to all your classes. Instantiate the class once with the host and the use
+```Java
+host = getHost();
+Log.init(host);
+
+//Output to window...
+Log.println("") anywhere in your script.
+```
+Also, helpful to bind a hot key to your bitwig script console when logging stuff. I use SHIFT+CTRL+J to pull it up. saves a bit of time. This tip came from Mossgraber.
 
 ## Math
-Some basic math utility function. Free to copy into your own library, most of these were found on stack exchange.
+Some basic math utility function. Free to copy into your own library, most of these were found on stack exchange and tuned for Java.
 
 ## Midi
-Some basic midi ids that you might need. NoteOn, CC, etc.
+Some basic midi ids that you might need. NoteOn, CC, etc. Not fully filled out but might be inspiring to Leverage
 
 # Connect / Support
 If you want some help getting these working, have questions or feature suggestions reach out on the [kvr - bitwig controller scripting forum]( https://www.kvraudio.com/forum/viewforum.php?f=268). Always great to connect to fellow nerds. 
