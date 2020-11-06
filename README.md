@@ -11,11 +11,27 @@ This is a set of bitwig api scripting utilities that you can merge and import in
 ## ChannelFinder
 Need a way to always keep a CursorTrack or Cursor Bank assigned to a specific channel via name. This tool allows you to assign a string and object to the channel finder and call find() in the class. This will set bitwig to start searching through the live set. Banks do not have all their names available all at once so It goes through one by one to assign to the correct space.
 
+'''Java
+
+ //Create Channel Finder...
+ channel_finder = new ChannelFinder(host);
+ 
+ //Init Channel Finder  (This is defered so you can determine where the settings appear in your Controller Script.
+ channel_finder.init();
+ 
+ //Add Track Bank to Channel Finder
+ track_bank = host.createTrackBank(8, 0, 0, true);
+
+'''
+
 ## ClipData
 Store Data into clip objects. Different styles of clip note objects exist for data. There is Note & Velocity datatypes. When selecting a clip it updates the parent class with its data set.
 
 ## ClipFileData
 Similar functionality as Clip Data. But no longer uses note data as its storage. Data is stored to a file and then able to be recalled via clip name. The file is plain text and can be edited later if deemed useful.
+
+## Leds
+Basic class with example to set led values without having to keep track of data manually if an LED has been set up or not. This is useful for tracking LED states and updating them for every flush. This only updates the values that have been changed via Lambda Supplier.
 
 # Additional Utilities
 ## Log
