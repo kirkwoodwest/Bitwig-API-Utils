@@ -1,5 +1,5 @@
-# Kirkwoods-Bitwig Utilities
-## Utilities for Bitwig Scripters
+# Kirkwoods Bitwig API Utilities
+## Utilities for Bitwig API Nerds 
 
 This is a set of bitwig api scripting utilities that you can merge and import into your own bitwig scripts.
 
