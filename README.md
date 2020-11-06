@@ -11,3 +11,7 @@ Store Data into clip objects. Different styles of clip note objects exist for da
 
 ## ClipFileData
 Similar functionality as Clip Data. But no longer uses note data as its storage. Data is stored to a file and then able to be recalled via clip name. The file is plain text and can be edited later if deemed useful.
+
+
+# Support
+If you want some help getting these working, have questions or feature suggestions reach out on the [kvr - bitwig controller scripting forum]( https://www.kvraudio.com/forum/viewforum.php?f=268). Always great to connect to fellow nerds.
