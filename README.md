@@ -3,7 +3,7 @@
 
 This is a set of bitwig api scripting utilities that you can merge and import into your own bitwig scripts. 
 
-##*TODO* 
+## *TODO* 
 *Set up example bitwig extensions to show how these operate.*
 *with example files *
 *video*
