@@ -9,11 +9,11 @@ This is a set of bitwig api scripting utilities that you can merge and import in
 1. *video*
 
 ## ChannelFinder
-Need a way to always keep a CursorTrack or Cursor Bank assigned to a specific channel via name. This tool allows you to assign a string and object to the channel finder and call find() in the class. This will set bitwig to start searching through the live set. Banks do not have all their names available all at once so It goes through one by one to assign to the correct space.
+Need a way to always keep a CursorTrack or Cursor Bank assigned to a specific channel via name. This tool allows you to assign a string and object to the channel finder and call find() in the class. This will set bitwig to start searching through the live set. Banks do not have all their names available all at once so It goes through one by one to assign to the correct space. *I should note last time I tried using this with groups, I failed. So... I just no longer use groups.*
 
 ![Image Of Channel Finder Settings](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/channel_finder.png)
 
-'''Java
+```Java
 
  //Create Channel Finder...
  channel_finder = new ChannelFinder(host);
@@ -21,10 +21,22 @@ Need a way to always keep a CursorTrack or Cursor Bank assigned to a specific ch
  //Init Channel Finder  (This is defered so you can determine where the settings appear in your Controller Script.
  channel_finder.init();
  
- //Add Track Bank to Channel Finder
+ //Create a track bank...
  track_bank = host.createTrackBank(8, 0, 0, true);
+ 
+ cursor_track = host.createCursorTrack("Cursor Track, "Cursor Track", 0, 0, false);
+    
+ //Setup channel finder with track bank to target track "MY NAME", 
+ channel_finder.add(track_bank.getTrackBank(), "MY NAME");
+ 
+  //Setup channel finder with cursor_track to target track "MY NAME", 
+ channel_finder.add(cursor_track, "MY NAME");
+ 
+ //Notes: It should auto scan tracks whenever the project has changed.
+ //Press "Scan Tracks" if you want to update something or tracks have been moved in the set.
+ //Not sure if this works with Groups, I had trouble getting indexes to line up.
 
-'''
+```
 
 ## ClipData
 Store Data into clip objects. Different styles of clip note objects exist for data. There is Note & Velocity datatypes. When selecting a clip it updates the parent class with its data set.
