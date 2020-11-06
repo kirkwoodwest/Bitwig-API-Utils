@@ -44,6 +44,16 @@ Store Data into clip objects. Different styles of clip note objects exist for da
 ## ClipFileData
 Similar functionality as Clip Data. But no longer uses note data as its storage. Data is stored to a file and then able to be recalled via playig the clip. It uses the clip name to register and recall the data.  The file is plain text and can be edited later if deemed useful.
 
+
+![Image of Clip](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/clip_data_clips.png)
+Creating a clip with new data in it is simple. Make a new clip, assign a name and press play. This should update the clip name in the clip data selector. On first go it writes the data you have in memory to the clip. Second time it recalls. 
+
+To Update the data in a specific clip, press play on that clip. Observe that the Clip Name in the panel has changed. Make modifications to the data and press Save clip data.
+
+![Image of Clip Data](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/clip_data.png)
+Shows panel to manage clip data. Path name to your global clip data file and name of clip file. This will need to be modified to your liking and can be customized to your track. *I've requested to bitwig to get the current path to the active track so it would just point to a name based on your project.*
+
+
 ## Leds
 Basic class with example to set led values without having to keep track of data manually if an LED has been set up or not. This is useful for tracking LED states and updating them for every flush. This only updates the values that have been changed via Lambda Supplier.
 
