@@ -11,6 +11,8 @@ This is a set of bitwig api scripting utilities that you can merge and import in
 ## ChannelFinder
 Need a way to always keep a CursorTrack or Cursor Bank assigned to a specific channel via name. This tool allows you to assign a string and object to the channel finder and call find() in the class. This will set bitwig to start searching through the live set. Banks do not have all their names available all at once so It goes through one by one to assign to the correct space.
 
+![Image Of Channel Finder Settings](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/channel_finder.png)
+
 '''Java
 
  //Create Channel Finder...
