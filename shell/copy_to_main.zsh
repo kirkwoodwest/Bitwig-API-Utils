@@ -1,0 +1,1 @@
+cp -r "/Users/slomocorp/Documents/Bitwig Studio/Controller Scripts/Kirkwoods Utils/src/main/java/com/kirkwoodwest/utils" "/Users/slomocorp/Documents/Bitwig Studio/Controller Scripts/NewScript/src/main/java/com/kirkwoodwest/" 
