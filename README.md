@@ -1,7 +1,7 @@
 # Kirkwoods-Bitwig Utilities
  Utilities for Bitwig Scripters
 
-##will go over these in detail..
+#will go over these in detail..
 
 ChannelFinder
 
