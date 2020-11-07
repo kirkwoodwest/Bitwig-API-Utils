@@ -66,7 +66,9 @@ Here is an example where I hooked up the LFO to modulate knob 1(indexed from 0).
 You can experiment with this extension by opening up this file in bitwig 3.2.8...
 https://github.com/kirkwoodwest/Bitwig-API-Utils/tree/master/Bitwig%20Example%20Files/CV%20Monitor
 
-And then selecting the CV To OSC Controller in the Kirkwood West Utils Extension File. This is set up to 
+And then selecting the CV To OSC Controller in the Kirkwood West Utils Extension File. This is set up to send to the home address 127.0.0.1 and port 9000. 
+
+*NOTE* This is nothing more than a working prototype. It reads the modulated values of the first three parameters and send it via osc immediatly. All this could be modified and changed to suit your needs. I also beleive you may want to change the osc updates to the flush() event and read the modulated value then. I'm not sure how I would leave both of those options... but its easy enough to modify either way. This would limit the amount of data streaming in via CV.
 
 ## Leds
 Basic class with example to set led values without having to keep track of data manually if an LED has been set up or not. This is useful for tracking LED states and updating them for every flush. This only updates the values that have been changed via Lambda Supplier.
