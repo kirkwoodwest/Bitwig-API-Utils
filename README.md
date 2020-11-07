@@ -1,7 +1,7 @@
 # Kirkwoods Bitwig API Utilities
 ## Utilities for Bitwig API Nerds 
 
-This is a set of bitwig api scripting utilities that you can freely use & modify into your own bitwig scripts. I'm not sure how to keep this project open for edit but if you find an issue or need help with one of the modules, please let me know. (kirkwoodwest@gmail.com)[mailto:kirkwoodwest@gmail.com]
+This is a set of bitwig api scripting utilities that you can freely use & modify into your own bitwig scripts. I'm not sure how to keep this project open for edit but if you find an issue or need help with one of the modules, please let me know. [kirkwoodwest@gmail.com]
 
 ## *TODO* 
 1. *Set up example bitwig extensions to show how these operate.*
@@ -92,4 +92,4 @@ Some basic midi ids that you might need. NoteOn, CC, etc. Not fully filled out b
 # Connect / Support
 If you want some help getting these working, have questions or feature suggestions reach out on the [kvr - bitwig controller scripting forum]( https://www.kvraudio.com/forum/viewforum.php?f=268). Always great to connect to fellow nerds. 
 
-Also would love to hear from you if you used the Java files found here. can either connect through forum or here [kirkwoodwest@gmail.com](mailto:kirkwoodwest@gmail.com]
+Also would love to hear from you if you used the Java files found here. can either connect through forum or here [kirkwoodwest@gmail.com]
