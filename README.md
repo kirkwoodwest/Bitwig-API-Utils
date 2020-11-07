@@ -82,7 +82,7 @@ Also, helpful to bind a hot key to your bitwig script console when logging stuff
 Some basic math utility function. Free to copy into your own library, most of these were found on stack exchange and tuned for Java.
 
 ## Midi
-Some basic midi ids that you might need. NoteOn, CC, etc. Not fully filled out but might be inspiring to Leverage
+Some basic midi ids that you might need. NoteOn, CC, etc. Not fully filled out but might be inspiring to integrate and build your own set of Midi utilities.
 
 # Connect / Support
 If you want some help getting these working, have questions or feature suggestions reach out on the [kvr - bitwig controller scripting forum]( https://www.kvraudio.com/forum/viewforum.php?f=268). Always great to connect to fellow nerds. 
