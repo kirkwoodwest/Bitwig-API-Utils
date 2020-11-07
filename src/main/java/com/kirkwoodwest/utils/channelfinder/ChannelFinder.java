@@ -135,8 +135,8 @@ public class ChannelFinder {
 
   public void init() {
     DocumentState document_state = controller_host.getDocumentState();
-    status_setting = document_state.getStringSetting("Status", "Channel Finder", 8, "Initialized...");
-    Signal rescan_settings = document_state.getSignalSetting("Rescan Tracks", "Channel Finder", "Rescan Tracks");
+    status_setting = document_state.getStringSetting("Status", "Channel Finder", 12, "Initialized...");
+    Signal rescan_settings = document_state.getSignalSetting("Rescan", "Channel Finder", "Rescan Tracks");
     rescan_settings.addSignalObserver(this::doFind);
     doFind();
   }
