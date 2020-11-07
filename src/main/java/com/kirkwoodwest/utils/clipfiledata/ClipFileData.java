@@ -22,6 +22,7 @@ public class ClipFileData {
   //Holds a list of listeners defined by ID.
   private final HashMap<String, ClipFileDataParent> data_parents = new HashMap<>();
 
+
   ArrayList<DataItem> data_items = new ArrayList<>();
 
   private String file_path;
@@ -32,6 +33,7 @@ public class ClipFileData {
   //Document Preference Settings
   private final SettableStringValue setting_data_file_path;
   private final SettableStringValue setting_data_file_name;
+  private final Signal setting_reload_data;
   private final Signal              setting_save_data;
   private final SettableStringValue setting_track_id;
 
@@ -54,6 +56,9 @@ public class ClipFileData {
 
     setting_data_file_name = document_state.getStringSetting("Data File", "Clip File Data", 20, "settings.txt");
     setting_data_file_name.addValueObserver(this::fileNameChanged);
+
+    setting_reload_data = document_state.getSignalSetting("Reload Data", "Clip File Data Track", "Reload Data From File");
+    setting_reload_data.addSignalObserver(this::reloadSaveData);
 
     setting_track_id = document_state.getStringSetting("Track ID", "Clip File Data Track", 20, "Default Track ID");
     setting_track_id.addValueObserver(this::trackIdChanged);
@@ -88,6 +93,10 @@ public class ClipFileData {
     // app.projectName().addValueObserver(this::projectNameChanged);
     // String project_name = app.projectName().get();
     //  host.println("PROJECT NAME: " + project_name);
+  }
+
+  private void reloadSaveData() {
+    readFromFile();
   }
 
   private void clipNameChange(int slot_index, String s) {
@@ -231,6 +240,10 @@ public class ClipFileData {
   }
 
   private void readFromFile() {
+    //Clear out original data
+    data_items = new ArrayList<>();
+
+    //Set charset and file reading path
     Charset charset = Charset.forName("US-ASCII");
     Path    path    = Paths.get(file_path + file_name);
 
