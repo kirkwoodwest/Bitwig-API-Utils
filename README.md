@@ -1,7 +1,7 @@
 # Kirkwoods Bitwig API Utilities
 ## Utilities for Bitwig API Nerds 
 
-This is a set of bitwig api scripting utilities that you can merge and import into your own bitwig scripts. 
+This is a set of bitwig api scripting utilities that you can freely use & modify into your own bitwig scripts. I'm not sure how to keep this project open for edit but if you find an issue or need help with one of the modules, please let me know. (kirkwoodwest@gmail.com)[mailto:kirkwoodwest@gmail.com]
 
 ## *TODO* 
 1. *Set up example bitwig extensions to show how these operate.*
