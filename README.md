@@ -63,6 +63,11 @@ Here is an example where I hooked up the LFO to modulate knob 1(indexed from 0).
 ![Image of Bitwig Device Using CV To Osc](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/cv_to_osc_device.png)
 ![Image of Data Monitor receiving](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/cv_to_osc_data_monitor.png)
 
+You can experiment with this extension by opening up this file in bitwig 3.2.8...
+https://github.com/kirkwoodwest/Bitwig-API-Utils/tree/master/Bitwig%20Example%20Files/CV%20Monitor
+
+And then selecting the CV To OSC Controller in the Kirkwood West Utils Extension File. This is set up to 
+
 ## Leds
 Basic class with example to set led values without having to keep track of data manually if an LED has been set up or not. This is useful for tracking LED states and updating them for every flush. This only updates the values that have been changed via Lambda Supplier.
 
