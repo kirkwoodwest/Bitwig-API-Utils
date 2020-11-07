@@ -55,6 +55,13 @@ To Update the data in a specific clip, press play on that clip. Observe that the
 
 Shows panel to manage clip data. Path name to your global clip data file and name of clip file. This will need to be modified to your liking and can be customized to your track. *I've requested to bitwig to get the current path to the active track so it would just point to a name based on your project.*
 
+## CV To Osc Module
+A little CV to Osc Utility. Requires the Use of a device on a track. This device will receive modulation parameters to each slot and as it receives updates it will send osc out immediatly. 
+
+Here is an example where I hooked up the LFO to modulate knob 1(indexed from 0)... and you can observe how it outputs to the data monitor.
+
+![Image of Bitwig Device Using CV To Osc](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/cv_to_osc_device.png)
+![Image of Data Monitor receiving](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/cv_to_osc_data_monitor.png)
 
 ## Leds
 Basic class with example to set led values without having to keep track of data manually if an LED has been set up or not. This is useful for tracking LED states and updating them for every flush. This only updates the values that have been changed via Lambda Supplier.
