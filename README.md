@@ -55,6 +55,18 @@ To Update the data in a specific clip, press play on that clip. Observe that the
 
 Shows panel to manage clip data. Path name to your global clip data file and name of clip file. This will need to be modified to your liking and can be customized to your track. *I've requested to bitwig to get the current path to the active track so it would just point to a name based on your project.*
 
+## CV To Osc Module
+A little CV to Osc Utility. Requires the Use of a device on a track. This device will receive modulation parameters to each slot and as it receives updates it will send osc out immediatly. 
+
+Here is an example where I hooked up the LFO to modulate knob 1(indexed from 0)... and you can observe how it outputs to the data monitor.
+
+![Image of Bitwig Device Using CV To Osc](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/cv_to_osc_device.png)
+![Image of Data Monitor receiving](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/cv_to_osc_data_monitor.png)
+
+You can experiment with this extension by opening up this file in bitwig 3.2.8...
+https://github.com/kirkwoodwest/Bitwig-API-Utils/tree/master/Bitwig%20Example%20Files/CV%20Monitor
+
+And then selecting the CV To OSC Controller in the Kirkwood West Utils Extension File. This is set up to 
 
 ## Leds
 Basic class with example to set led values without having to keep track of data manually if an LED has been set up or not. This is useful for tracking LED states and updating them for every flush. This only updates the values that have been changed via Lambda Supplier.
@@ -75,7 +87,7 @@ Also, helpful to bind a hot key to your bitwig script console when logging stuff
 Some basic math utility function. Free to copy into your own library, most of these were found on stack exchange and tuned for Java.
 
 ## Midi
-Some basic midi ids that you might need. NoteOn, CC, etc. Not fully filled out but might be inspiring to Leverage
+Some basic midi ids that you might need. NoteOn, CC, etc. Not fully filled out but might be inspiring to integrate and build your own set of Midi utilities.
 
 # Connect / Support
 If you want some help getting these working, have questions or feature suggestions reach out on the [kvr - bitwig controller scripting forum]( https://www.kvraudio.com/forum/viewforum.php?f=268). Always great to connect to fellow nerds. 
