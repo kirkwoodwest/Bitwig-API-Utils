@@ -23,7 +23,6 @@ public class CVToOsc {
     channel_finder.add(cursor_track, "CVOSC");
 
     //Get parameters and store them in convenient lists.
-
     CursorRemoteControlsPage remote_control_page = cursor_device.createCursorRemoteControlsPage("CV To Osc Remote Page", parameter_count,"");
     Parameter[] parameters = new Parameter[parameter_count];
     for(int p=0;p<parameter_count;p++) {
@@ -39,7 +38,7 @@ public class CVToOsc {
     //Only update with the modulated value change...
   }
   private void modulatedValueChanged(double value, int index) {
-   // host.println("Modulated Value " + value +  "| index:" + index);
+    // host.println("Modulated Value " + value +  "| index:" + index);
     String target = "Bitwig/CVToOsc/" + index;
     try {
       float v = (float) value;

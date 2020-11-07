@@ -15,7 +15,7 @@ public class CVToOscExtension extends ControllerExtension
    private OscModule osc_module;
 
    private int receivePort = 8000;
-   private String sendHost = "192.168.86.23"; //"127.0.0.1";
+   private String sendHost = "127.0.0.1"; //"192.168.86.23";
    private int sendPort    = 9000;
    private OscAddressSpace addressSpace;
    private OscConnection connection;
@@ -33,6 +33,7 @@ public class CVToOscExtension extends ControllerExtension
       osc_module = host.getOscModule();
       addressSpace = osc_module.createAddressSpace();
       connection = osc_module.connectToUdpServer(sendHost, sendPort, addressSpace);
+
       //Create channel finder,
       channel_finder = new ChannelFinder(host);
 

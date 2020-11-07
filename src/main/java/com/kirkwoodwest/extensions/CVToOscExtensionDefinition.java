@@ -42,13 +42,13 @@ public class CVToOscExtensionDefinition extends ControllerExtensionDefinition
    @Override
    public String getHardwareVendor()
    {
-      return "Kirkwood West";
+      return "Kirkwoods Utils";
    }
    
    @Override
    public String getHardwareModel()
    {
-      return "Kirkwoods Utils";
+      return "CV To Osc";
    }
 
    @Override
