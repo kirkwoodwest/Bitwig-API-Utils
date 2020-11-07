@@ -90,6 +90,6 @@ Some basic math utility function. Free to copy into your own library, most of th
 Some basic midi ids that you might need. NoteOn, CC, etc. Not fully filled out but might be inspiring to integrate and build your own set of Midi utilities.
 
 # Connect / Support
-If you want some help getting these working, have questions or feature suggestions reach out on the [kvr - bitwig controller scripting forum]( https://www.kvraudio.com/forum/viewforum.php?f=268). Always great to connect to fellow nerds. 
+If you want some help getting these working, have questions or feature suggestions reach out on the [kvr: bitwig controller scripting forum]( https://www.kvraudio.com/forum/viewforum.php?f=268). Always great to connect to fellow nerds. 
 
 Also would love to hear from you if you used the Java files found here. can either connect through forum or here [kirkwoodwest@gmail.com]
