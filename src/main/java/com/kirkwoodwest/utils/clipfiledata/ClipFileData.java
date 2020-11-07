@@ -1,7 +1,6 @@
 package com.kirkwoodwest.utils.clipfiledata;
 
 import com.bitwig.extension.controller.api.*;
-import com.kirkwoodwest.utils.FileChooser;
 import com.kirkwoodwest.utils.channelfinder.ChannelFinder;
 
 import java.io.BufferedReader;
