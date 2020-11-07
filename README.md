@@ -1,7 +1,7 @@
 # Kirkwoods Bitwig API Utilities
 ## Utilities for Bitwig API Nerds 
 
-This is a set of bitwig api scripting utilities that you can merge and import into your own bitwig scripts. 
+This is a set of bitwig api scripting utilities that you can freely use & modify into your own bitwig scripts. I'm not sure how to keep this project open for edit but if you find an issue or need help with one of the modules, please let me know. kirkwoodwest@gmail.com
 
 ## *TODO* 
 1. *Set up example bitwig extensions to show how these operate.*
@@ -66,7 +66,9 @@ Here is an example where I hooked up the LFO to modulate knob 1(indexed from 0).
 You can experiment with this extension by opening up this file in bitwig 3.2.8...
 https://github.com/kirkwoodwest/Bitwig-API-Utils/tree/master/Bitwig%20Example%20Files/CV%20Monitor
 
-And then selecting the CV To OSC Controller in the Kirkwood West Utils Extension File. This is set up to 
+And then selecting the CV To OSC Controller in the Kirkwood West Utils Extension File. This is set up to send to the home address 127.0.0.1 and port 9000. 
+
+*NOTE* This is nothing more than a working prototype. It reads the modulated values of the first three parameters and send it via osc immediatly. All this could be modified and changed to suit your needs. I also beleive you may want to change the osc updates to the flush() event and read the modulated value then. I'm not sure how I would leave both of those options... but its easy enough to modify either way. This would limit the amount of data streaming in via CV.
 
 ## Leds
 Basic class with example to set led values without having to keep track of data manually if an LED has been set up or not. This is useful for tracking LED states and updating them for every flush. This only updates the values that have been changed via Lambda Supplier.
@@ -90,6 +92,6 @@ Some basic math utility function. Free to copy into your own library, most of th
 Some basic midi ids that you might need. NoteOn, CC, etc. Not fully filled out but might be inspiring to integrate and build your own set of Midi utilities.
 
 # Connect / Support
-If you want some help getting these working, have questions or feature suggestions reach out on the [kvr - bitwig controller scripting forum]( https://www.kvraudio.com/forum/viewforum.php?f=268). Always great to connect to fellow nerds. 
+If you want some help getting these working, have questions or feature suggestions reach out on the [kvr: bitwig controller scripting forum]( https://www.kvraudio.com/forum/viewforum.php?f=268). Always great to connect to fellow nerds. 
 
-Also would love to hear from you if you used the Java files found here. can either connect through forum or here [kirkwoodwest@gmail.com](mailto:kirkwoodwest@gmail.com]
+Also would love to hear from you if you used the Java files found here. can either connect through forum or here [kirkwoodwest@gmail.com]
