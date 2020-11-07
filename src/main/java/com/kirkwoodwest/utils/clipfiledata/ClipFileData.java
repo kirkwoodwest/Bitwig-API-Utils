@@ -358,7 +358,7 @@ public class ClipFileData {
 //    JDialog wrapper = new JDialog((Window)null);
 //    wrapper.setVisible(true);
 //    chooser.showDialog(wrapper, "APPROVE");
-    FileChooser file_chooser = new FileChooser();
+    //FileChooser file_chooser = new FileChooser();
 
     // System.out.println(f.getCurrentDirectory());
     // System.out.println(f.getSelectedFile());
