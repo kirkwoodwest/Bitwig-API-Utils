@@ -3,11 +3,6 @@
 
 This is a set of bitwig api scripting utilities that you can freely use & modify into your own bitwig scripts. I'm not sure how to keep this project open for edit but if you find an issue or need help with one of the modules, please let me know. kirkwoodwest@gmail.com
 
-## *TODO* 
-1. *Set up example bitwig extensions to show how these operate.*
-1. *with example files*
-1. *video*
-
 ## ChannelFinder
 Provides a method to keep a CursorTrack or Cursor Bank assigned to a specific channel via name. This tool allows you to assign a string and object to the channel finder and call find() in the class. This will set bitwig to start searching through the live set. Banks do not have all their names available all at once so It goes through one by one to assign to the correct space. *I should note I failed to get groups working... I just no longer use groups.*
 
