@@ -55,7 +55,7 @@ To Update the data in a specific clip, press play on that clip. Observe that the
 
 Shows panel to manage clip data. Path name to your global clip data file and name of clip file. This will need to be modified to your liking and can be customized to your track. *I've requested to bitwig to get the current path to the active track so it would just point to a name based on your project.*
 
-###Where to use?
+### Where to use?
 Maybe there is certain parameter sets that you would like to save off or recall later? Color settings for a midi controller, i.e. Midifighter Twister. Maybe you would like to leverage the clip data to perform actions based on a data set, like writing midi to a clip or changing a bunch of settings within bitwig on the fly. Lots of untapped possibilities here...
 
 ## CV To Osc Module
