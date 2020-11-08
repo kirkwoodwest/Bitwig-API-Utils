@@ -42,7 +42,7 @@ Provides a method to keep a CursorTrack or Cursor Bank assigned to a specific ch
 Store Data into clip objects. Different styles of clip note objects exist for data. There is Note & Velocity datatypes. When playing a clip it updates the parent class with its data set.
 
 ## ClipFileData
-Similar functionality as Clip Data. But no longer uses note data as its storage. Data is stored to a file and then able to be recalled via playig the clip. It uses the clip name to register and recall the data.  The file is plain text and can be edited later if deemed useful.
+This is the second evolution of Clip Data. It no longer uses note data as storage. The data is referenced via clip name. Then it can be recalled by playing the clip. Multiple classes can become a parent of clip data which allows you to store and recall many different sets of object data into the saved file. The file is plain text and can be edited later if deemed useful.
 
 
 ![Image of Clip](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/clip_data_clips.png)
@@ -54,6 +54,9 @@ To Update the data in a specific clip, press play on that clip. Observe that the
 ![Image of Clip Data](https://github.com/kirkwoodwest/Bitwig-API-Utils/blob/master/documentation/clip_data.png)
 
 Shows panel to manage clip data. Path name to your global clip data file and name of clip file. This will need to be modified to your liking and can be customized to your track. *I've requested to bitwig to get the current path to the active track so it would just point to a name based on your project.*
+
+###Where to use?
+Maybe there is certain parameter sets that you would like to save off or recall later? Color settings for a midi controller, i.e. Midifighter Twister. Maybe you would like to leverage the clip data to perform actions based on a data set, like writing midi to a clip or changing a bunch of settings within bitwig on the fly. Lots of untapped possibilities here...
 
 ## CV To Osc Module
 A little CV to Osc Utility. Requires the Use of a device on a track. This device will receive modulation parameters to each slot and as it receives updates it will send osc out immediatly. 
